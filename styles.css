@@ -34,36 +34,23 @@ body {
 .paypal-logo {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
 }
 
-.logo-p {
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(135deg, #0070ba 0%, #003087 100%);
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 18px;
-}
-
+/* Wordmark only, matching screenshot */
 .logo-text {
-    font-size: 28px;
-    font-weight: 700;
-    color: #0070ba;
+    font-size: 34px;
+    font-weight: 800;
+    color: #000000;
     letter-spacing: -0.5px;
 }
 
 /* Login Card */
 .login-card {
     background: #ffffff;
-    border: 1px solid #e1e5e9;
-    border-radius: 8px;
+    border: none;
+    border-radius: 0;
     padding: 40px 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -96,9 +83,9 @@ body {
 
 .form-input {
     width: 100%;
-    padding: 16px 20px;
-    border: 2px solid #e1e5e9;
-    border-radius: 8px;
+    padding: 14px 18px;
+    border: 1px solid #cfd4da;
+    border-radius: 10px;
     font-size: 16px;
     font-family: inherit;
     background: #ffffff;
@@ -173,11 +160,11 @@ body {
 .btn-next,
 .btn-login {
     width: 100%;
-    padding: 16px;
+    padding: 14px 20px;
     background: #0070ba;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 28px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -199,11 +186,11 @@ body {
 
 .btn-signup {
     width: 100%;
-    padding: 16px;
+    padding: 14px 20px;
     background: #ffffff;
     color: #333;
-    border: 2px solid #333;
-    border-radius: 8px;
+    border: 2px solid #000;
+    border-radius: 28px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
@@ -235,7 +222,7 @@ body {
     left: 0;
     right: 0;
     height: 1px;
-    background: #e1e5e9;
+    background: #e6eaef;
 }
 
 .divider span {
